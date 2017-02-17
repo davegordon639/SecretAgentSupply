@@ -16,10 +16,15 @@ container {
 }
 
 .logo {
+  position: relative;
+  top: 0px;
+  left: 0px;
   display: flex;
   height: 1.4rem;
   margin: .66rem;
   background-color: black;
+  border: 3px solid red;
+  padding: .66rem;
 }
 
 .logo img {
@@ -47,7 +52,7 @@ container {
   color: white;
   font-weight: bold;
   left: 5%;
-  top: 30%;
+  top: 40%;
 }
 
 .arrival h4 {
@@ -73,6 +78,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .image {
@@ -103,4 +109,15 @@ width: 100%;
   /*border: 1px solid black;*/
   background-color: black;
   position: relative;
+}
+
+.location {
+  display: flex;
+}
+
+.location p {
+  background-color: black;
+  width: 35%;
+  color: white;
+  padding: 2rem;
 }
