@@ -21,9 +21,7 @@ container {
   left: 0px;
   display: flex;
   height: 1.4rem;
-  margin: .66rem;
   background-color: black;
-  border: 3px solid red;
   padding: .66rem;
 }
 
@@ -35,6 +33,7 @@ container {
   color: white;
   padding-left: 1rem;
   font-size: 1rem;
+  padding-top: .25rem;
 }
 
 .main {
@@ -113,11 +112,26 @@ width: 100%;
 
 .location {
   display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
-.location p {
+.location p:first-child {
   background-color: black;
-  width: 35%;
+  width: 200px;
   color: white;
-  padding: 2rem;
+  padding: .5rem;
+}
+
+.footer {
+  background-color: black;
+  height: 5rem;
+  margin-top: 10%
+}
+
+.footer p {
+  position: relative;
+  top: 2.5rem;
+  left: 1rem;
+  color: white;
 }
