@@ -73,6 +73,10 @@ nav {
   color: white;
 }
 
+nav span.tablet {
+  display: none;
+}
+
 .images {
   display: flex;
   flex-direction: row;
@@ -134,4 +138,45 @@ width: 100%;
   top: 2.5rem;
   left: 1rem;
   color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav span.desktop, .tablet {
+    display: none;
+  }
+
+  .image {
+    width: 40%;
+  }
+
+  nav span.tablet {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .arrival {
+    top: 10rem;
+    left: 0px;
+    width: 470px;
+    padding: 1rem 2rem;
+  }
+
+  .arrival h4 {
+    font-size: .77rem;
+    margin-bottom: .05rem;
+  }
+
+  .arrival h2 {
+    font-size: 1rem;
+    margin-top: .25rem;
+  }
+
+  .main {
+    height: 15rem;
+  }
+
+  .location {
+    flex-wrap: nowrap;
+  }
 }
